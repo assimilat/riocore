@@ -1,0 +1,38 @@
+{
+    "name": "ICESugar_v1.5",
+    "description": "ICESugar_v1.5",
+    "boardcfg": "ICESugar_v1.5",
+    "protocol": "SPI",
+    "plugins": [
+        {
+            "type": "spi",
+            "pins": {
+                "mosi": {
+                    "pin": "SPI:MOSI"
+                },
+                "miso": {
+                    "pin": "SPI:MISO"
+                },
+                "sclk": {
+                    "pin": "SPI:SCLK"
+                },
+                "sel": {
+                    "pin": "SPI:SEL"
+                }
+            }
+        },
+        {
+            "type": "blink",
+            "pins": {
+                "led": {
+                    "pin": "LED:G",
+                    "modifier": [
+                        {
+                            "type": "onerror"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
