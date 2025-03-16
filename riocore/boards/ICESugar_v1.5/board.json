@@ -1,0 +1,369 @@
+{
+    "name": "ICESugar_v1.5",
+    "description": "iCESugar is a FPGA board made by MuseLab",
+    "url": "https://github.com/wuxx/icesugar.git",
+    "pinimage": "board.png",
+    "toolchain": "icestorm",
+    "family": "ice40",
+    "type": "up5k",
+    "package": "sg48",
+    "flashcmd": "openFPGALoader -b ice40_generic rio.bin -f",
+    "clock": {
+        "osc": "12000000",
+        "speed": "30000000",
+        "pin": "35"
+    },
+    "slots": [
+        {
+            "name": "UART",
+            "comment": "USB UART",
+            "pins": {
+                "RX": {
+                    "pin": "6",
+                    "pos": [
+                        192,
+                        135
+                    ],
+                    "direction": "input"
+                },
+                "TX": {
+                    "pin": "4",
+                    "pos": [
+                        192,
+                        153
+                    ],
+                    "direction": "output"
+                }
+            }
+        },
+        {
+            "name": "LED",
+            "comment": "LED",
+            "pins": {
+                "B": {
+                    "pin": "7",
+                    "pos": [
+                        275,
+                        186
+                    ]
+                }
+            }
+        },
+        {
+            "name": "BUTTON",
+            "comment": "BUTTON",
+            "pins": {
+                "1": {
+                    "pin": "8",
+                    "pos": [
+                        290,
+                        195
+                    ]
+                }
+            }
+        },
+        {
+            "name": "RGB",
+            "comment": "",
+            "default": "",
+            "pins": {
+                "GRN": {
+                    "pin": "41",
+                    "pos": [
+                        135,
+                        276
+                    ],
+                    "direction": "all"
+                },
+                "RED": {
+                    "pin": "40",
+                    "pos": [
+                        362,
+                        276
+                    ],
+                    "direction": "all"
+                },
+                "BLU": {
+                    "pin": "39",
+                    "pos": [
+                        372,
+                        276
+                    ],
+                    "direction": "all"
+                }
+            }
+        },
+        {
+            "name": "SPI",
+            "comment": "SPI",
+            "default": "spi",
+            "pins": {
+                "SCLK": {
+                    "pin": "15",
+                    "pos": [
+                        293,
+                        150
+                    ],
+                    "direction": "all"
+                },
+                "MISO": {
+                    "pin": "17",
+                    "pos": [
+                        345,
+                        158
+                    ],
+                    "direction": "all"
+                },
+                "MOSI": {
+                    "pin": "14",
+                    "pos": [
+                        293,
+                        142
+                    ],
+                    "direction": "all"
+                },
+                "SEL": {
+                    "pin": "12",
+                    "pos": [
+                        345,
+                        150
+                    ],
+                    "direction": "all"
+                },
+                "IO3": {
+                    "pin": "13",
+                    "pos": [
+                        293,
+                        159
+                    ],
+                    "direction": "all"
+                }
+            }
+        },
+        {
+            "name": "PMOD1",
+            "comment": "PMOD1",
+            "pins": {
+                "P1": {
+                    "pin": "10",
+                    "pos": [
+                        346,
+                        104
+                    ]
+                },
+                "P2": {
+                    "pin": "6",
+                    "pos": [
+                        361,
+                        104
+                    ]
+                },
+                "P3": {
+                    "pin": "3",
+                    "pos": [
+                        379,
+                        104
+                    ]
+                },
+                "P4": {
+                    "pin": "48",
+                    "pos": [
+                        395,
+                        104
+                    ]
+                },
+                "P7": {
+                    "pin": "9",
+                    "pos": [
+                        427,
+                        85
+                    ]
+                },
+                "P8": {
+                    "pin": "4",
+                    "pos": [
+                        412,
+                        85
+                    ]
+                },
+                "P9": {
+                    "pin": "2",
+                    "pos": [
+                        394,
+                        85
+                    ]
+                },
+                "P10": {
+                    "pin": "47",
+                    "pos": [
+                        377,
+                        85
+                    ]
+                }
+            }
+        },
+
+        {
+            "name": "PMOD2",
+            "comment": "PMOD2",
+            "pins": {
+                "P1": {
+                    "pin": "46",
+                    "pos": [
+                        471,
+                        110
+                    ]
+                },
+                "P2": {
+                    "pin": "44",
+                    "pos": [
+                        471,
+                        125
+                    ]
+                },
+                "P3": {
+                    "pin": "42",
+                    "pos": [
+                        471,
+                        140
+                    ]
+                },
+                "P4": {
+                    "pin": "37",
+                    "pos": [
+                        471,
+                        155
+                    ]
+                },
+                "P7": {
+                    "pin": "45",
+                    "pos": [
+                        487,
+                        110
+                    ]
+                },
+                "P8": {
+                    "pin": "43",
+                    "pos": [
+                        487,
+                        125
+                    ]
+                },
+                "P9": {
+                    "pin": "38",
+                    "pos": [
+                        487,
+                        140
+                    ]
+                },
+                "P10": {
+                    "pin": "36",
+                    "pos": [
+                        487,
+                        155
+                    ]
+                }
+            }
+        },
+        {
+            "name": "PMOD3",
+            "comment": "PMOD3",
+            "default": "",
+            "pins": {
+                "P1": {
+                    "pin": "34",
+                    "pos": [
+                        471,
+                        260
+                    ]
+                },
+                "P2": {
+                    "pin": "31",
+                    "pos": [
+                        471,
+                        275
+                    ]
+                },
+                "P3": {
+                    "pin": "27",
+                    "pos": [
+                        471,
+                        290
+                    ]
+                },
+                "P4": {
+                    "pin": "25",
+                    "pos": [
+                        471,
+                        305
+                    ]
+                },
+                "P7": {
+                    "pin": "32",
+                    "pos": [
+                        488,
+                        260
+                    ]
+                },
+                "P8": {
+                    "pin": "28",
+                    "pos": [
+                        488,
+                        275
+                    ]
+                },
+                "P9": {
+                    "pin": "26",
+                    "pos": [
+                        488,
+                        290
+                    ]
+                },
+                "P10": {
+                    "pin": "23",
+                    "pos": [
+                        488,
+                        305
+                    ]
+                }
+            }
+        },
+                    "name": "PMOD4",
+            "comment": "PMOD4",
+            "pins": {
+                "P1": {
+                    "pin": "21",
+                    "pos": [
+                        289,
+                        356
+                    ]
+                },
+                "P2": {
+                    "pin": "20",
+                    "pos": [
+                        307,
+                        356
+                    ]
+                },
+                "P3": {
+                    "pin": "19",
+                    "pos": [
+                        325,
+                        356
+                    ]
+                },
+                "P4": {
+                    "pin": "18",
+                    "pos": [
+                        340,
+                        356
+                    ]
+                }
+            }
+        }
+
+    ]
+}
+
+
+
